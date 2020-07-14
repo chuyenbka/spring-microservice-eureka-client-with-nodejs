@@ -51,7 +51,7 @@ const heroes = [
 
 app.get('/heroes', (req, res) => {
    console.log('Returning heroes list');
-   res.send(heroes);
+   res.send({ heroes, port });
 });
 
 app.get('/powers', (req, res) => {
